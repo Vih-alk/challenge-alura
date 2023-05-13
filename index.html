@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Decodificador de texto</title>
+	<link rel="stylesheet" href = "reset.css">
+	<link rel="stylesheet" href= "style-dec.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1><img src="logo.png" class="logo"></h1 alt="logo da página">
+	</header>
+	<main>
+		<div class="areatextodigitado">
+			<textarea cols="70" rows="18" placeholder="Digite seu texto" class="textodigitado"></textarea>
+			<p class="info">Apenas letras minúsculas e sem acento.</p>
+			<input type="button" onclick= "btnCriptografar()", onclick="exibeTexto()" class="botaocrip" value="Criptografar">
+			<input type="button" onclick= "btnDescriptografar()" class="botaodes" value="Descriptografar">
+			<input type="button" onclick= "btnLimpar()" class="botaolimpar" value="Limpar">
+		</div>	
+		<div Id="areatextoretorno">
+			<textarea cols="30" rows="18"class="textoretorno"></textarea>
+			<input type="button" onclick= "btnCopiar()"class="botaocopiar" value="Copiar">
+		</div>
+		<div Id="areaimagem">
+			<img src="kitten.png" class="imagem1">
+			<h2 class="texto1">Nenhuma mensagem encontrada</h2><br>
+			<p class="texto2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+		</div>
+	</main>
+	<footer>
+		<p class="copyright">&copy; Copyright by Vívian Alkmim - 2023</p>
+	</footer>
+</body>
+
+
+</html>

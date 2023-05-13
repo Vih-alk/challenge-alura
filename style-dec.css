@@ -1,0 +1,153 @@
+
+body{
+	font-family: "Montserrat", sans-serif;
+}
+
+header{
+	background:#B0E0E6;
+	padding: 15px 0;
+}
+
+.logo{
+	width:8%;
+}
+
+main{
+	padding: 20px 0 50px 0;
+	margin: auto;
+	background: linear-gradient(#B0E0E6, #E3ACE3, #B0E0E6);
+}
+
+.areatextodigitado{
+	display:inline-block;
+	width: 60%;
+
+}
+
+#areatextoretorno{
+	position: relative;
+	width: 30%;
+	float: right;
+	display: none;
+}
+
+.info{
+	display: block;
+	font-size: 12px;
+	color: #495057;
+	margin: 5px 60px;
+}
+
+.info:before{
+	position: relative;
+	content: url(Vector.png);
+	top: 3px;
+	right: 3px;
+}
+
+.textodigitado{
+	font-size: 20px;
+	margin: 0 50px;
+	border-radius: 10px;
+	border: none;
+	outline: 0;
+
+}
+.textoretorno{
+	font-size:20px;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: none;
+	outline: 0;
+	
+}
+
+.botaocrip,.botaodes,.botaolimpar,.botaocopiar{
+	display:inline-block;
+	width: 25%;
+	padding: 10px 0;
+	font-size: 18px;
+	border-radius: 15px;
+	cursor: pointer;
+
+}
+
+.botaocrip,.botaolimpar,.botaocopiar{
+	color: #FFFFFF;
+	background: #72C8D2;
+	margin: 5px 45px;
+	border: none;
+}
+
+.botaodes{
+	background: #CBCBCB;
+	color: #565656;
+	border: none;
+}
+
+.botaocopiar{
+	margin: 30px 0px;
+}
+
+.botaocrip:active,.botaolimpar:active,.botaocopiar:active{
+	background: #7BBFBB;
+	transform: scale(1.1);
+}
+
+.botaodes:active{
+	background: #9B9B9B;
+	transform: scale(1.1);
+}
+
+.botaocrip:hover, .botaodes:hover, .botaolimpar:hover, .botaocopiar:hover{
+	color: #993399;
+
+}
+
+
+#areaimagem{
+	display: inline-block;
+	position: absolute;
+	width: 350px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	font-size:20px;
+	margin: 0 150px;
+	border:none;
+	outline: 0;
+	float: right;
+	border-radius: 10px;
+}
+
+
+
+.imagem1{
+	width: 200px;
+}
+
+.texto1{
+	font-weight: bold;
+	font-size: 15px;
+
+}
+
+.texto2{
+	font-size: 15px;
+	line-height: 25px;
+
+}
+
+footer{
+	text-align: center;
+	background: linear-gradient(#000000, #3B3F58);
+	padding: 40px 0;
+
+}
+.copyright{
+	color: #FFFFFF;
+	font-size:12px;
+	margin:20px 0;
+}
+
+

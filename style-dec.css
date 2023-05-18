@@ -1,6 +1,6 @@
 
 body{
-	font-family: "Montserrat", sans-serif;
+	font-family: "Inter", sans-serif;
 }
 
 header{
@@ -47,7 +47,7 @@ main{
 
 .textodigitado{
 	font-size: 20px;
-	margin: 0 50px;
+	margin: 0 60px;
 	border-radius: 10px;
 	border: none;
 	outline: 0;
@@ -69,19 +69,19 @@ main{
 	font-size: 18px;
 	border-radius: 15px;
 	cursor: pointer;
+	margin: 5px 10px 0 50px;
 
 }
 
 .botaocrip,.botaolimpar,.botaocopiar{
 	color: #FFFFFF;
 	background: #72C8D2;
-	margin: 5px 45px;
 	border: none;
 }
 
 .botaodes{
-	background: #CBCBCB;
-	color: #565656;
+	background: #9B9B9B;
+	color: #525252;
 	border: none;
 }
 
@@ -95,7 +95,7 @@ main{
 }
 
 .botaodes:active{
-	background: #9B9B9B;
+	background: #808080;
 	transform: scale(1.1);
 }
 
@@ -106,24 +106,24 @@ main{
 
 
 #areaimagem{
-	display: inline-block;
 	position: absolute;
-	width: 350px;
+	width: 30%;
+	float: right;
+	display: inline;
 	text-align: center;
 	box-sizing: border-box;
 	border: 2px solid #000000;
 	font-size:20px;
-	margin: 0 150px;
-	border:none;
+	margin: 0 120px;
+	border: none;
 	outline: 0;
-	float: right;
 	border-radius: 10px;
 }
 
 
 
-.imagem1{
-	width: 200px;
+.imagem{
+	width: 50%;
 }
 
 .texto1{
@@ -134,7 +134,7 @@ main{
 
 .texto2{
 	font-size: 15px;
-	line-height: 25px;
+	line-height: 20px;
 
 }
 
@@ -149,5 +149,79 @@ footer{
 	font-size:12px;
 	margin:20px 0;
 }
+
+@media screen and (max-width: 480px){
+	body{
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+		margin: auto;
+	}
+	.logo{
+		width: 15%;
+		margin: auto;
+	}
+	.textodigitado, .textoretorno{
+		font-size: 10px;
+		display: flex;
+		width: 70%;
+		height: 40%;
+		margin: auto;	}
+
+	.areatextodigitado{
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	#areatextoretorno{
+		display: none;
+		width: 100%;
+		height: 100%;
+		float: none;
+	}
+
+	.info{
+		text-align: center;
+		font-size: 5px;
+	}
+	.info:before{
+		content: none;
+	}
+
+
+	#areaimagem{
+		position:relative;
+		width: auto;
+		display: inline-block;
+		float:none;
+		margin: 0 50px;
+	}
+
+	.botaocrip, .botaodes, .botaolimpar, .botaocopiar{
+		display: block;
+		width: 50%;
+		font-size: 10px;
+		margin: 3% 25%;
+
+	}
+	.imagem{
+		width: 30%;
+	}
+
+	.texto1, .texto2{
+		font-size: 10px;
+	}
+
+	footer{
+		display: block;
+		width: auto;
+		font-size:8px;
+		margin: auto;
+
+	}
+}
+
 
 

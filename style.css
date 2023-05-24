@@ -217,6 +217,10 @@ footer{
 	footer{
 		display: block;
 		width: auto;
+<<<<<<< HEAD
+=======
+		font-size: 5px;
+>>>>>>> e46dd9a1acb3bc7380953599374823d25c542e83
 		margin: auto;
 
 	}

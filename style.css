@@ -217,9 +217,12 @@ footer{
 	footer{
 		display: block;
 		width: auto;
-		font-size:8px;
 		margin: auto;
 
+	}
+
+	.copyright{
+		font-size: 8px;
 	}
 }
 

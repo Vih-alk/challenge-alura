@@ -26,7 +26,7 @@ main{
 
 #areatextoretorno{
 	position: relative;
-	width: 30%;
+	width: 33%;
 	float: right;
 	display: none;
 }
@@ -35,7 +35,7 @@ main{
 	display: block;
 	font-size: 12px;
 	color: #495057;
-	margin: 5px 60px;
+	margin: 5px 90px;
 }
 
 .info:before{
@@ -47,7 +47,7 @@ main{
 
 .textodigitado{
 	font-size: 20px;
-	margin: 0 60px;
+	margin: 0 80px;
 	border-radius: 10px;
 	border: none;
 	outline: 0;
@@ -61,6 +61,13 @@ main{
 	outline: 0;
 	
 }
+.botaocrip{
+	margin: 5px 0 0 90px;
+}
+
+.botaodes,.botaolimpar{
+	margin: 5px 0 0 50px;
+}
 
 .botaocrip,.botaodes,.botaolimpar,.botaocopiar{
 	display:inline-block;
@@ -69,7 +76,6 @@ main{
 	font-size: 18px;
 	border-radius: 15px;
 	cursor: pointer;
-	margin: 5px 10px 0 50px;
 
 }
 
@@ -114,7 +120,7 @@ main{
 	box-sizing: border-box;
 	border: 2px solid #000000;
 	font-size:20px;
-	margin: 0 120px;
+	margin: 0 80px;
 	border: none;
 	outline: 0;
 	border-radius: 10px;
@@ -217,10 +223,7 @@ footer{
 	footer{
 		display: block;
 		width: auto;
-<<<<<<< HEAD
-=======
 		font-size: 5px;
->>>>>>> e46dd9a1acb3bc7380953599374823d25c542e83
 		margin: auto;
 
 	}

@@ -9,6 +9,7 @@
 		document.getElementById("areatextoretorno").style.display="none";
 	}
 
+
 	//Caixas de texto//
 	const areaTexto = document.querySelector(".textodigitado");
 	const areaRetorno = document.querySelector(".textoretorno");
@@ -26,11 +27,12 @@
 		areaRetorno.value = textoCript;
 		areaTexto.value = "";
 	}
+
 	
 	function criptografar(stringCript){
 
 		let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
-		stringCript  = stringCript.toLowerCase();
+		stringCript  = stringCript.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
 		for(let i = 0; i < matrizCodigo.length; i++){
 			if(stringCript.includes(matrizCodigo[i][0])){
@@ -51,7 +53,7 @@
 	function descriptografar(stringDescript){
 
 		let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
-		stringDescript  = stringDescript.toLowerCase();
+		stringDescript  = stringDescript.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
 		for(let i = 0; i < matrizCodigo.length; i++){
 			if(stringDescript.includes(matrizCodigo[i][1])){
@@ -74,4 +76,8 @@
 		document.execCommand("copy");
 		
 	}
+
+
+
+
 

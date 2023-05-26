@@ -22,10 +22,15 @@
 
 
 	function btCriptografar(){
+		if(/^[a-zç ]+$/.test(areaTexto.value)){
 		exibeTexto();
 		const textoCript = criptografar(areaTexto.value);
 		areaRetorno.value = textoCript;
-		areaTexto.value = "";
+		areaTexto.value = "";	
+	}else{
+		alert("Digite um texto com letras minúsculas e sem acento!");
+		areaTexto.value="";
+		}
 	}
 
 	
@@ -44,10 +49,15 @@
 	}
 
 	function btDescriptografar(){
+		if(/^[a-zç ]+$/.test(areaTexto.value)){
 		exibeTexto();
 		const textoDescript = descriptografar(areaTexto.value);
 		areaRetorno.value = textoDescript;
-		areaTexto.value = "";
+		areaTexto.value = "";}
+		else{
+		alert("Digite um texto com letras minúsculas e sem acento!");
+		areaTexto.value ="";
+		}
 	}
 	
 	function descriptografar(stringDescript){
@@ -66,6 +76,7 @@
 
 	function btLimpar(){
 		areaTexto.value = "";
+		areaRetorno.value = "";
 		exibeImagem();
 
 	}

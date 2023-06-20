@@ -25,8 +25,7 @@
 		if(/^[a-zç ]+$/.test(areaTexto.value)){
 		exibeTexto();
 		const textoCript = criptografar(areaTexto.value);
-		areaRetorno.value = textoCript;
-		areaTexto.value = "";	
+		areaRetorno.value = textoCript;	
 	}else{
 		alert("Digite um texto com letras minúsculas e sem acento!");
 		}
@@ -52,7 +51,6 @@
 		exibeTexto();
 		const textoDescript = descriptografar(areaTexto.value);
 		areaRetorno.value = textoDescript;
-		areaTexto.value = "";
 		}else{
 		alert("Digite um texto com letras minúsculas e sem acento!");
 		}

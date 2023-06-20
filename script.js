@@ -29,7 +29,6 @@
 		areaTexto.value = "";	
 	}else{
 		alert("Digite um texto com letras minúsculas e sem acento!");
-		areaTexto.value="";
 		}
 	}
 
@@ -53,10 +52,9 @@
 		exibeTexto();
 		const textoDescript = descriptografar(areaTexto.value);
 		areaRetorno.value = textoDescript;
-		areaTexto.value = "";}
-		else{
+		areaTexto.value = "";
+		}else{
 		alert("Digite um texto com letras minúsculas e sem acento!");
-		areaTexto.value ="";
 		}
 	}
 	
